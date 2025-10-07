@@ -26,3 +26,10 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [ "https://example.com/api/auth" ]
+
+application_url = "int-quoter-production.up.railway.app"
+
+[auth]
+redirect_urls = [
+  "int-quoter-production.up.railway.app/auth/callback",
+]
