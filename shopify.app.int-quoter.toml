@@ -2,7 +2,7 @@
 
 client_id = "c79d35487185b26149aec70b6345cefd"
 name = "International Quote"
-application_url = "https://careful-infinitely-grouper.ngrok-free.app"
+application_url = "https://int-quoter-production.up.railway.app"
 embedded = true
 
 [build]
@@ -16,16 +16,11 @@ api_version = "2025-10"
 scopes = "write_draft_orders,read_products"
 
 [auth]
-redirect_urls = ["https://careful-infinitely-grouper.ngrok-free.app/auth/callback", "https://careful-infinitely-grouper.ngrok-free.app/auth/shopify/callback", "https://careful-infinitely-grouper.ngrok-free.app/api/auth/callback"]
+redirect_urls = ["https://int-quoter-production.up.railway.app/auth/callback", "https://int-quoter-production.up.railway.app/auth/shopify/callback", "https://int-quoter-production.up.railway.app/api/auth/callback"]
 
 [app_proxy]
-url = "https://careful-infinitely-grouper.ngrok-free.app"
+url = "https://int-quoter-production.up.railway.app"
 subpath = "int-quoter"
 prefix = "apps"
 
 application_url = "https://int-quoter-production.up.railway.app"
-
-[auth]
-redirect_urls = [
-  "https://int-quoter-production.up.railway.app/auth/callback",
-]
