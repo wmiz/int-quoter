@@ -39,6 +39,7 @@ if (host === "localhost") {
 
 export default defineConfig({
   server: {
+    host: process.env.NODE_ENV === "production" ? "0.0.0.0" : host,
     allowedHosts: [host],
     cors: {
       preflightContinue: true,
