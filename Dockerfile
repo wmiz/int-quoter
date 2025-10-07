@@ -1,3 +1,9 @@
+ARG SHOPIFY_APP_URL
+ENV SHOPIFY_APP_URL=$SHOPIFY_APP_URL
+
+ECHO $SHOPIFY_APP_URL
+
+
 FROM node:18-alpine
 RUN apk add --no-cache openssl
 
