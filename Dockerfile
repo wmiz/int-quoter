@@ -1,7 +1,7 @@
 FROM node:18-alpine
 RUN apk add --no-cache openssl
 
-EXPOSE ${PORT:-3000}
+EXPOSE 3000
 
 WORKDIR /app
 
@@ -11,7 +11,6 @@ ARG SHOPIFY_API_KEY
 ARG SHOPIFY_API_SECRET
 ARG SCOPES
 ARG HOST
-ARG PORT
 
 # Make sure they're available at runtime as well
 ENV NODE_ENV=production \
@@ -19,8 +18,7 @@ ENV NODE_ENV=production \
     SHOPIFY_API_KEY=${SHOPIFY_API_KEY} \
     SHOPIFY_API_SECRET=${SHOPIFY_API_SECRET} \
     SCOPES=${SCOPES} \
-    HOST=${HOST} \
-    PORT=${PORT:-3000}
+    HOST=${HOST}
 
 COPY package.json package-lock.json* ./
 
