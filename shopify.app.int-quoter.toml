@@ -22,3 +22,10 @@ redirect_urls = ["https://careful-infinitely-grouper.ngrok-free.app/auth/callbac
 url = "https://careful-infinitely-grouper.ngrok-free.app"
 subpath = "int-quoter"
 prefix = "apps"
+
+application_url = "https://int-quoter-production.up.railway.app"
+
+[auth]
+redirect_urls = [
+  "https://int-quoter-production.up.railway.app/auth/callback",
+]
